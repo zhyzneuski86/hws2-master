@@ -1,8 +1,14 @@
 import React from 'react'
 import s from './FriendMessage.module.css'
 
+type FriendMessage = {
+    message: {
+        id: number
+    }
+}
+
 // создать тип вместо any и отобразить приходящие данные
-const FriendMessage = (props: any) => {
+const FriendMessage: React.FC<FriendMessage> = (props ) => {
     return (
         <div
             id={'hw1-friend-message-' + props.message.id}

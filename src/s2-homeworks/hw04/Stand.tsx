@@ -68,6 +68,7 @@ const Stand = () => {
                     <SuperButton
                         id={'hw4-super-button-secondary'}
                         xType={'secondary'}
+                        //className={s.addButtonClass}
                     >
                         secondary
                     </SuperButton>
